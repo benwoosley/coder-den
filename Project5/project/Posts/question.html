@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/darkmode.js" async></script>
+    <script src="../js/colorchange.js" async></script>
+</head>
+
+<body>
+    <header>
+        <h1>Coder's Den</h1>
+    </header>
+    <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script>
+    $(function () {
+    $("#nav").hide();
+    $("#menuBtn").on("click", function () {
+       $("#nav").slideDown(500);
+    });
+    $("#menuBtn").on("dblclick", function () {
+       $("#nav").slideUp(300);
+    });
+});
+    </script>
+    <button id="menuBtn">Menu</button>
+    <ul id="nav">
+      <li><a href="../CS316Project5.html"> Main Forum </a></li>
+      <li><a href="../Accounts/login.html"> Login </a></li>
+      <li><a href="../Accounts/signup.html"> Sign Up </a></li>
+      <li><a href="main.html"> Questions </a></li>
+      <li><a href="../aboutus.html"> About Us </a></li>
+      <li><a href="../contactus.html"> Contact Us </a></li>
+    </ul>
+    <div class="questioncontainer">
+        <div class="column1">
+            <h2>Questions</h2>
+            <div class="columncontent">
+                <ol>
+                    <li>
+                        <a href="#">
+                            <h3>Mean of boolean list</h3>
+                            <br>
+                        </a>
+                        <p>In python I'm used to doing something like np.mean([True, False, True......]) to compute the
+                            fraction of True values in
+                            a list. Is there some equivalent in mathematica?
+
+                            Using Cases or Count seems way too verbose</p>
+                        <br>
+                        <p>tags: python</p>
+                        <br>
+                        <p>Answers: 2</p>
+                        <a href="../Accounts/account.html">
+                            <h4>John Smith</h4>
+                        </a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="column1">
+            <h2>Answers</h2>
+            <div class="columncontent">
+                <ol>
+                    <li>
+                        <p>Use Boole to convert truth values to numbers.
+
+                            <br>
+                            <code>
+                            Mean@Boole@{True, False, True}
+                            (* 2/3 *)
+                            </code>
+                        </p>
+                        <h4>John Doe</h4>
+                    </li>
+                    <li>
+                        <p>
+                            <code>
+                                list = {True, True, False, True, False, True, False, True, True, True}
+                            </code>
+                            <br>
+                            Using mean gives:
+                            <br>
+                            <code>
+                                Mean[list]
+                                Out: 1/10 (3 False + 7 True)
+                            </code>
+                            <br>
+                            Then you can replace False and True with 0 and 1 respectively:
+                            <br>
+                            <code>
+                                Mean[list] /. False -> 0 /. True -> 1
+                                Out: 7/10
+                            </code>
+                        </p>
+                        <h4>User123412</h4>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="column1">
+            <h2>Your Answer</h2>
+            <div class="columncontent">
+                <form action="http://examples.funwebdev.com/process.php" method="POST">
+                    <label for="person">I am a:</label>
+                    <select name="person" id="person">
+                        <optgroup label="Student">
+                            <option value="ukstudent">UK student</option>
+                            <option value="ulstudent">U of L Student</option>
+                        </optgroup>
+                        <optgroup label="Professors">
+                            <option value="ukprof">UK Professor</option>
+                            <option value="ulprof">U of L Professor</option>
+                        </optgroup>
+                    </select>
+                    <div class="answer">
+                        <textarea rows="10" name="answer"></textarea>
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

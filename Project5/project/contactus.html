@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1><strong>Contact Us</strong></h1>
+    <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script>
+        $(function () {
+            $("#nav").hide();
+            $("#menuBtn").on("click", function () {
+                $("#nav").slideDown(500);
+            });
+            $("#menuBtn").on("dblclick", function () {
+                $("#nav").slideUp(300);
+            });
+        });
+    </script>
+    <button id="menuBtn">Menu</button>
+    <ul id="nav">
+        <li><a href="CS316Project5.html"> Main Forum </a></li>
+        <li><a href="Accounts/login.html"> Login </a></li>
+        <li><a href="Accounts/signup.html"> Sign Up </a></li>
+        <li><a href="Posts/main.html"> Questions </a></li>
+        <li><a href="aboutus.html"> About Us </a></li>
+        <li><a href="contactus.html"> Contact Us </a></li>
+    </ul>
+    <table class="center1">
+        <caption> Contacts</caption>
+
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td> Gunnar Benson </td>
+                <td class="contacts"> Gbe236@uky.edu </td>
+            </tr>
+            <tr>
+                <td> Benjamin Jackson </td>
+                <td class="contacts"> Bwja222@uky.edu </td>
+            </tr>
+            <tr>
+                <td> Benjamin Woosley </td>
+                <td class="contacts"> Bwo239@uky.edu </td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="./js/colorchange.js"></script>
+    <script src="./js/darkmode.js"></script>
+</body>
+
+</html>
