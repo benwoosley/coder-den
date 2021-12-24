@@ -11,7 +11,7 @@ For simplicity sake, XAMPP is recommended if hosting the website on a local mach
 Developed by Gunnar Benson, Benjamin Jackson, and Benjamin Woosley.
 
 ### Stack
-This website requires Apache and mySQL. During development XAMPP was used.
+This website requires HTTP server and mySQL. During development XAMPP was used.
 
 The website stores the images in a randomly generated ID onto a directory on the hosts machine. This allows for multiple images of the same name to be uploaded.
 
