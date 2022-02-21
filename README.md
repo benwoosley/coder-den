@@ -5,6 +5,8 @@ A question based forum website that allows users to ask and discuss any topic.
 
 A forum style website that allows users to create posts with images, text and email address. Displays posts chronologically and allows users to search posts based on users' email address.
 
+Posts are sorted chronologically, and there is a leaderboard on the landing page with the Top Askers!
+
 The content on the website can be customized with Light/Dark mode, as well as any accent color that the user chooses!
 
 For simplicity sake, XAMPP is recommended if hosting the website on a local machine.
