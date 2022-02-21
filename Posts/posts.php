@@ -1,5 +1,5 @@
 <?php
-$conn = new mysqli('localhost', 'projec6', 'password', 'posts');
+$conn = new mysqli('localhost', 'root', '', 'posts');
 if (mysqli_connect_errno()) {
     printf("Connect failed: %s\n", mysqli_connect_error());
     exit();

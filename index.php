@@ -1,5 +1,5 @@
 <?php
-$conn = new mysqli('localhost', 'projec6', 'password', 'posts');
+$conn = new mysqli('localhost', 'root', '', 'posts');
 if (!$conn) {
     echo "failed to connect" . $conn->connect_error;
 }
@@ -122,4 +122,5 @@ mysqli_close($conn);
     <script src="./js/colorchange.js"></script>
 </body>
 
+:
 </html>
