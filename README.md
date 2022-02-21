@@ -1,5 +1,7 @@
 # Coder's Den Forum
 <img width="640" alt="Screen Shot 2022-02-21 at 1 27 05 AM" src="https://user-images.githubusercontent.com/56568238/154900760-b414f399-c6d4-4de0-b397-84c6447b04fd.png">
+Developed by Gunnar Benson, Benjamin Jackson, and Benjamin Woosley.
+
 
 A question based forum website that allows users to ask and discuss any topic.
 
@@ -9,10 +11,19 @@ Posts are sorted chronologically, and there is a leaderboard on the landing page
 
 The content on the website can be customized with Light/Dark mode, as well as any accent color that the user chooses!
 
-For simplicity sake, XAMPP is recommended if hosting the website on a local machine. Use the root account of phpmyadmin with no password by default. The image uploading may require some tweaking to get it to work on your system.
-
-Developed by Gunnar Benson, Benjamin Jackson, and Benjamin Woosley.
-
+### Deploying
+- For simplicity sake, XAMPP is recommended if hosting the website on a local machine. Make sure that Apache Web Server and MySQL database are running.
+#### Steps to setup phpmyadmin and mySQL 
+1. Uses the root account with no password by default, this can be changed by modifying the first line of every `.php` file.
+2. Create a database titled 'posts'
+3. Create a table called 'posts'
+4. Within the table you need these columns:
+  - id (INT) (auto increment)
+  - email (VARCHAR)
+  - content (VARCHAR)
+  - created_at (TIMESTAMP) (default value set to current timestamp)
+  - img_dir (VARCHAR)
+If everything was done correctly it should work without modification. The image directory/upload varies from system to system so this may require additional tweaking.
 ### Stack
 This website requires HTTP server and mySQL. During development XAMPP was used.
 
