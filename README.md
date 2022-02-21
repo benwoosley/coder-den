@@ -18,11 +18,12 @@ The content on the website can be customized with Light/Dark mode, as well as an
 2. Create a database titled 'posts'
 3. Create a table called 'posts'
 4. Within the table you need these columns:
-  - id (INT) (auto increment)
-  - email (VARCHAR)
-  - content (VARCHAR)
-  - created_at (TIMESTAMP) (default value set to current timestamp)
-  - img_dir (VARCHAR)
+- id (INT) (auto increment)
+- email (VARCHAR)
+- content (VARCHAR)
+- created_at (TIMESTAMP) (default value set to current timestamp)
+- img_dir (VARCHAR)
+
 If everything was done correctly it should work without modification. The image directory/upload varies from system to system so this may require additional tweaking.
 ### Stack
 This website requires HTTP server and mySQL. During development XAMPP was used.
