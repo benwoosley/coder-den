@@ -9,7 +9,7 @@ Posts are sorted chronologically, and there is a leaderboard on the landing page
 
 The content on the website can be customized with Light/Dark mode, as well as any accent color that the user chooses!
 
-For simplicity sake, XAMPP is recommended if hosting the website on a local machine.
+For simplicity sake, XAMPP is recommended if hosting the website on a local machine. Use the root account of phpmyadmin with no password by default. The image uploading may require some tweaking to get it to work on your system.
 
 Developed by Gunnar Benson, Benjamin Jackson, and Benjamin Woosley.
 
