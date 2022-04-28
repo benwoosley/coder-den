@@ -12,7 +12,7 @@ Posts are sorted chronologically, and there is a leaderboard on the landing page
 The content on the website can be customized with Light/Dark mode, as well as any accent color that the user chooses!
 
 ### Deploying
-For simplicity sake, XAMPP is recommended if hosting the website on a local machine. Make sure that Apache Web Server and MySQL database are running.
+XAMPP is recommended if hosting the website on a local machine. Make sure that Apache Web Server and MySQL database are running.
 #### Steps to setup phpmyadmin and mySQL 
 1. Uses the root account with no password by default, this can be changed by modifying the first line of every `.php` file.
 2. Create a database titled 'posts'
